@@ -1,0 +1,48 @@
+<!-- This will get updated everytime I get a new job.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="resume-page">
+
+    <!-- Matrix Background -->
+    <canvas id="codeCanvas"></canvas>
+    
+    <!-- Close Button -->
+    <a href="index.html" class="close-btn">✖</a>
+
+    <!-- Tab Buttons -->
+    <div class="tab-container">
+        <button class="tab-button active" onclick="showTab('it-resume')">IT Resume</button>
+        <button class="tab-button" onclick="showTab('non-it-resume')">Non-IT Resume</button>
+    </div>
+
+    <!-- Resume Content Wrapper -->
+    <div class="resume-wrapper">
+        <!-- IT Resume Section -->
+        <div id="it-resume" class="resume-content">
+            <div class="resume-header">
+                <h2>IT Resume</h2>
+                <a href="pdfs/Mai Resume 2024 Revamp.pdf" download class="download-btn">Download</a>
+            </div>
+            <iframe src="pdfs/Mai Resume 2024 Revamp.pdf" class="pdf-viewer"></iframe>
+        </div>
+
+        <!-- Non-IT Resume Section -->
+        <div id="non-it-resume" class="resume-content">
+            <div class="resume-header">
+                <h2>Non-IT Resume</h2>
+                <a href="pdfs/Mai Resume 2024.pdf" download class="download-btn">Download</a>
+            </div>
+            <iframe src="pdfs/Mai Resume 2024.pdf" class="pdf-viewer"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
